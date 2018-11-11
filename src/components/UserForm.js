@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import UserDetails from './UserDetails';
 import PersonalDetails from './PersonalDetails';
 import Confirm from './Confirm';
+import Success from './Success';
 
 class UserForm extends Component {
 constructor() {
@@ -69,7 +70,7 @@ render() {
             )
         case 4:
             return (
-                <h1>Success</h1>
+                <Success />
             )
         }
     }
