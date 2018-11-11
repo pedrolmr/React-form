@@ -14,10 +14,10 @@ class Confirm extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <div className="success-page">
                 <h1>SUCCESS</h1>
                 <p>You will receive an email shortly.</p>
-            </React.Fragment>
+            </div>
         );
     }
 }
