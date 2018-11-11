@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import UserDetails from './components/UserDetails';
+import UserDetails from './UserDetails';
 
 class UserForm extends Component {
 constructor() {
@@ -31,7 +30,7 @@ prevStep = () => {
     })
 }
 
-changeHandler = () => {
+changeHandler = event => {
     this.setState({ [event.target.name]: event.target.value });
 }
 
