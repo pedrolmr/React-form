@@ -15,13 +15,10 @@ class Confirm extends Component {
     render() {
         const { values: { firstName, lastName, email, occupation, city, bio} } = this.props;
         return (
-            <React.Fragment>
-                <h3>First Name:</h3>
-                <p>{firstName}</p>
-
-                <h3>Last Name:</h3>
-                <p>{lastName}</p>
-
+            <div className="confirm-details">
+                <h3>Full Name:</h3>
+                <p>{`${firstName} ${lastName}`}</p>
+                
                 <h3>Email:</h3>
                 <p>{email}</p>
 
@@ -36,7 +33,7 @@ class Confirm extends Component {
 
                 <button onClick={this.continue}>Continue</button>
                 <button onClick={this.back}>Back</button>
-            </React.Fragment>
+            </div>
         );
     }
 }
