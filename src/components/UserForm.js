@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import UserDetails from './UserDetails';
+import PersonalDetails from './PersonalDetails';
+import Confirm from './Confirm';
 
 class UserForm extends Component {
 constructor() {
@@ -50,11 +52,20 @@ render() {
             )
         case 2:
             return (
-                <h1>form personal details</h1>
+                <PersonalDetails
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    changeHandler={this.changeHandler}
+                    values={values}
+                />
             )
         case 3:
             return (
-                <h1>confirm</h1>
+                <Confirm
+                    nextStep={this.nextStep}
+                    prevStep={this.prevStep}
+                    values={values}
+                />
             )
         case 4:
             return (
